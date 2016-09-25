@@ -82,7 +82,8 @@ var htmlTempate=`<html>
     </div>
     </div>
 </body>
-</html>`;
+</html>`
+;
 return htmlTemplate;
 }
 app.get('/', function (req, res) {
