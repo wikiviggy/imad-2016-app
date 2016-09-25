@@ -19,4 +19,12 @@ body {
 .img-medium {
     height: 200px;
 }
-
+ .koodigrah{
+    max-width: 800px;
+    margin: 0 auto;
+    color: grey;
+    font-family: sans-serif;
+     padding-left: 80px;
+     padding-top: 60px;
+     padding-bottom: 20px;
+       }
