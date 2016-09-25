@@ -86,7 +86,7 @@ var htmltempate=`<html>
 return htmltemplate;
 }
 app.get('/', function (req, res) {
-  res.sendfile(path.join(_dirname,'ui','index.html'));
+  res.sendfile(path.join__(dirname,'ui','index.html'));
 });
 app.get('/:articleName',function (req, res){
    var articleName=req.params.articleName;
