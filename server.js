@@ -52,13 +52,13 @@ var articles={
         </p>`
 }
 };
-function createtemplate(data){
+function createTemplate(data){
 var title=data.title;
 var date=data.date;
 var heading=data.heading;
 var content=data.content;
 
-var htmltempate=`<html>
+var htmlTempate=`<html>
    <head>
        <title>
            ${title}
@@ -83,14 +83,14 @@ var htmltempate=`<html>
     </div>
 </body>
 </html>`;
-return htmltemplate;
+return htmlTemplate;
 }
 app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname,'ui','index.html'));
 });
 app.get('/:articleName',function (req, res){
    var articleName=req.params.articleName;
-    res.send(createtemplate(articles[articleName]));
+    res.send(createTemplate(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
