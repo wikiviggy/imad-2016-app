@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-'articleone':{
+'article-one':{
     title:'article-1|wikiviggy',
     heading:'article-one',
     date:'septembre 22,2016',
@@ -21,7 +21,7 @@ var articles={
         <p>a bientot . the nightmares are REAL !!! BALOR CLUB WORRLDWIDE !
         </p>`
 },
-'articletwo':{
+'article-two':{
         title:'article-2|wikiviggy',
     heading:'article-two',
     date:'septembre 23,2016',
@@ -36,7 +36,7 @@ var articles={
         <p>a bientot . the nightmares are REAL !!! BALOR CLUB WORRLDWIDE !
         </p>`
 },
-'articlethree':{
+'article-three':{
     title:'article-3|wikiviggy',
     heading:'article-three',
     date:'septembre 24,2016',
