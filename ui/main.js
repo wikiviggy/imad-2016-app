@@ -12,5 +12,5 @@ function moveright()
     img.style.marginleft=marginleft+'px';
 }
 img.onclick=function(){
-    var interval=setInterval(moveright,100);
+    var interval=setInterval(moveright,50);
 };
