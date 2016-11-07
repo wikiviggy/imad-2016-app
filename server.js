@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool= require('pg').Pool;
 var app = express();
-var config={
+var config= {
     user:'wikiviggy',
     database:'wikiviggy',
     host:'db.imad.hasura-app.io',
