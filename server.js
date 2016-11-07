@@ -28,7 +28,7 @@ var articles= {
         </p>`
 },
 'article-two':{
-        title:'article-2|wikiviggy',
+    title:'article-2|wikiviggy',
     heading:'article-two',
     date:'septembre 23,2016',
     content:`<p>
