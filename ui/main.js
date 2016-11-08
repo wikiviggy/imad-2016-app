@@ -4,7 +4,7 @@ var element=document.getElementById('main-text'
 );
 element.innerHtml= 'New value';
 //move the image
-var img=document.getElementById('madi');
+var img=document.getElementById('wiki');
 var marginleft=0;
 function moveright()
 {
