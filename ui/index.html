@@ -56,36 +56,11 @@
                I have introduced the same content on my profile page in french in the other paths of my webapp
         </div>
         <hr/>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-        <div>
-            <br>
-            <h4>leave your comments </h4>
-            <br>
-            <input id="title" type="text" maxlength="100" onkeyup="Allow()">
-            <input type="submit" value="Save" onclick="insert()"/>
-            <div id="display"></div>
-            <script>
-                var titles=[];
-                var titleInput = document.getElementById("title");
-                var messageBox = document.getElementById("display");
-                function insert () {
-                    titles.push(titleInput.value);
-                    clearAndShow();
-                }
-                function allow () {
-                   if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value!= "") {
-                        user.title.value="";
-                        alert("please enter only alphabets");
-                    }
-                }
-                function clearAndShow () {
-                    titleinput.value="";
-                    messageBox.innerHTML="";
-                    messageBox.innerHTML="Comments: <br>" + titles.join("<br> ") + "<br/>";
-                }
-            </script>
-        </div>
+     <!-- begin htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="http://www.htmlcommentbox.com/static/skins/default/skin.css" />
+ <script type="text/javascript" language="javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={  };} (function(){s=document.createElement("script");s.setAttribute("type","text/javascript");s.setAttribute("src", "http://www.htmlcommentbox.com/jread?page="+escape((window.hcb_user && hcb_user.PAGE)||(""+window.location)).replace("+","%2B")+"&opts=470&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end htmlcommentbox.com -->
         <h3>
         <p align="center">
             <p>&copy; 2016 vignesh prabhakar
