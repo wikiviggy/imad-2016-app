@@ -67,6 +67,12 @@ var content=data.content;
 
 var htmlTemplate=`<html>
    <head>
+       <style>
+       body
+       {
+           background-image:url("http://www.shockfamily.us/wp-content/uploads/2014/02/50-various-resources-to-freshen-the-web36.jpg");
+       }
+       </style>
        <title>
            ${title}
        </title>
