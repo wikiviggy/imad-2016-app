@@ -80,9 +80,11 @@ var htmlTemplate=`<html>
    <link href="/ui/style.css" rel="stylesheet" />
    </head>
     <body>
+        <h3>          
         <marquee>
            Welcome to this article ! This is a resource of this app ! 
            </marquee>
+        </h3>   
         <div class="koodigrah"> 
         <div >
         <a href="/">Home</a>
