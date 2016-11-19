@@ -70,7 +70,7 @@ var htmlTemplate=`<html>
        <style>
        body
        {
-           background-image:url("http://www.shockfamily.us/wp-content/uploads/2014/02/50-various-resources-to-freshen-the-web36.jpg");
+           background-image:url("http://kingofwallpapers.com/background-images-for-websites/background-images-for-websites-016.jpg");
        }
        </style>
        <title>
