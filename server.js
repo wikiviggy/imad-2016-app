@@ -74,6 +74,9 @@ var htmlTemplate=`<html>
    <link href="/ui/style.css" rel="stylesheet" />
    </head>
     <body>
+        <marquee>
+           Welcome to this article ! This is a resource of this app ! 
+           </marquee>
         <div class="koodigrah"> 
         <div >
         <a href="/">Home</a>
