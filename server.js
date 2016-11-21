@@ -87,7 +87,7 @@ var htmlTemplate=`<html>
         </h3>   
         <div class="koodigrah"> 
         <div >
-        <a href="/">Home</a>
+        <a class="wiki"href="/">Home</a>
     </div>
     <hr/>
     <h3>${heading}</h3>
