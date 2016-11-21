@@ -60,7 +60,7 @@ body {
     border-radius: 4px;
 }
 .amar:hover, .amar:focus {
-    background: #FA8072;
+    background: #48D1CC;
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
@@ -72,7 +72,7 @@ body {
     border-radius: 4px;
 }
 .akbar:hover, .akbar:focus {
-    background: #FA8072;
+    background: #FF6347;
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
@@ -84,7 +84,7 @@ body {
     border-radius: 4px;
 }
 .anthony:hover, .anthony:focus {
-    background: #FA8072;
+    background: #8B4513;
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
