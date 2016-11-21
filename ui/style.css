@@ -52,3 +52,39 @@ body {
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
+.amar {
+     
+    padding: 10px 15px;
+    background:#0000FF ;
+    color: #FFF;    
+    border-radius: 4px;
+}
+.amar:hover, .amar:focus {
+    background: #FA8072;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+.akbar {
+     
+    padding: 10px 15px;
+    background:#FF4500 ;
+    color: #FFF;    
+    border-radius: 4px;
+}
+.akbar:hover, .akbar:focus {
+    background: #FA8072;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+.anthony {
+     
+    padding: 10px 15px;
+    background:#CD853F ;
+    color: #FFF;    
+    border-radius: 4px;
+}
+.anthony:hover, .anthony:focus {
+    background: #FA8072;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
