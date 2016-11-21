@@ -79,12 +79,12 @@ body {
 .anthony {
      
     padding: 10px 15px;
-    background:#CD853F ;
+    background:#8B4513 ;
     color: #FFF;    
     border-radius: 4px;
 }
 .anthony:hover, .anthony:focus {
-    background: #8B4513;
+    background: #CD853F;
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
