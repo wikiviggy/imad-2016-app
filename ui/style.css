@@ -33,11 +33,17 @@ body {
      
     padding: 10px 15px;
     background:#800080 ;
-    color: #FFF;
+    color: #FFF;    
     border-radius: 4px;
 }
 .button-link:hover, .button-link:focus {
     background: #FA8072;
     border: solid 1px #2A4E77;
     text-decoration: none;
+}
+.wiki {
+      padding: 10px 15px;
+    background:#00FF00 ;
+    color: #FFF;    
+    border-radius: 4px;        
 }
