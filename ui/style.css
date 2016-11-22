@@ -100,3 +100,14 @@ body {
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
+.evil {
+      padding: 10px 15px;
+    background:#00FF00 ;
+    color: #FFF;    
+    border-radius: 4px;        
+}
+.evil:hover, .evil:focus {
+    background: #FFFF00;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
