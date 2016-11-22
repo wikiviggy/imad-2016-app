@@ -127,6 +127,7 @@ var page=`<html>
 <title>
 Login page
 </title>
+<meta name="viewport" content="width-device-width,initial-scale-1" \>
 </head>
 <body>
 <h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;
