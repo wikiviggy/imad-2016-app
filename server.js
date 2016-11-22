@@ -132,7 +132,7 @@ Login page
 <body>
 <h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;
 color:#00FF00;>
-Simple Login Page
+Simple Login Page to access and comment upon my third article 
 </h1>
 <form name="login">
 Username<input type="text" name="userid"/>
