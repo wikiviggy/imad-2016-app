@@ -117,6 +117,13 @@ function login () {
 
 var page=`<html>
 <head>
+<style>
+       body
+              {
+                         background-image:url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ChMQxpzikur_oqrbesow3tgAmWDD4f5Iq80ru3Idxz4Z_DgK");
+                                }
+                                       </style>
+
 <title>
 Login page
 </title>
