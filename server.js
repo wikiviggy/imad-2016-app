@@ -130,6 +130,7 @@ Login page
 <meta name="viewport" content="width-device-width,initial-scale-1" \>
 </head>
 <body>
+<a class="wiki"href="/">Home</a>
 <h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;
 color:#00FF00;>
 Simple Login Page to access and comment upon my third article 
