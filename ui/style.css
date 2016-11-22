@@ -88,3 +88,15 @@ body {
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
+.jerry {
+     
+    padding: 10px 15px;
+    background:#808000 ;
+    color: #FFF;    
+    border-radius: 4px;
+}
+.jerry:hover, .jerry:focus {
+    background:#00FF00 ;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
