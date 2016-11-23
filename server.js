@@ -183,8 +183,7 @@ function myMap() {
   var map = new google.maps.Map(mapCanvas, mapOptions);
 }
 </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script src="https://console.developers.google.com/apis/credentials/key/24?project=project-one-150405"></script>
 
 </body>
 </html>
