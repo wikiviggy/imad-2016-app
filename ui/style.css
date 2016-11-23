@@ -114,12 +114,12 @@ body {
 .tom {
      
     padding: 10px 15px;
-    background:#c0c0c0 ;
+    background:#808080 ;
     color: #FFF;    
     border-radius: 4px;
 }
 .tom:hover, .tom:focus {
-    background:#808080 ;
+    background:#c0c0c0 ;
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
