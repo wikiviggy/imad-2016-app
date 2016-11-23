@@ -174,6 +174,12 @@ app.get('/test-db',function(req,res){
         
     });
 });
+function place()
+{
+    var location=`<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15543.436330762042!2d80.2042434!3d13.108112300000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1479885075683" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>`
+    ;
+    return location;
+}
 app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname,'ui','index.html'));
 });
@@ -181,6 +187,9 @@ var counter=0;
 app.get('/counter',function (req,res){
  counter=counter+1;
  res.send(counter.toString());
+});
+app.get('/mymap', function  (req,res) {
+    res.send(place());
 });
 app.get('/my-login',function (req,res){
   res.send(login());
