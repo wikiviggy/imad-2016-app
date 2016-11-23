@@ -167,27 +167,28 @@ function mia()
 {
 var data=`<!DOCTYPE html>
 <html>
-<body>
 
-<h1>My First Google Map</h1>
+<body>
 
 <div id="map" style="width:100%;height:500px"></div>
 
 <script>
 function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
   var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), 
-    zoom: 10
-  }
+  var mapOptions = {center: myCenter, zoom: 5};
   var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
 }
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
 </body>
-</html> `
+</html>
+
+`
 ;
 return data;
 }
