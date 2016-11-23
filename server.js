@@ -162,7 +162,7 @@ function check(form)/*function to check userid & password*/
 }
 
 
-function map()
+function mia()
 
 {
 var data=`<!DOCTYPE html>
@@ -213,8 +213,8 @@ app.get('/counter',function (req,res){
  counter=counter+1;
  res.send(counter.toString());
 });
-app.get('/google-map',function  (req,res) {
- res.send(map());   
+app.get('/magic',function  (req,res) {
+ res.send(mia());   
 });
 app.get('/my-login',function (req,res){
   res.send(login());
