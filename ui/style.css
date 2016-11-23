@@ -123,3 +123,15 @@ body {
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
+.dhoni {
+     
+    padding: 10px 15px;
+    background:#F4D03F ;
+    color: #FFF;    
+    border-radius: 4px;
+}
+.dhoni:hover, .dhoni:focus {
+    background:#F9E79F ;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
