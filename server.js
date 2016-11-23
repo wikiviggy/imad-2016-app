@@ -181,7 +181,7 @@ function place()
    <style>
        body
               {
-                         background-image:url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5NvPWi4I00B8Phgfqll9xKyR1PmKyxxgeIsa7wLxj3Xsg8msSsg");
+                         background-image:url("http://shushi168.com/data/out/33/36118641-blue-background-wallpaper.jpg");
                                 }
                                        </style>
    </head>
