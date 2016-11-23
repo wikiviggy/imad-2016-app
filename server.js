@@ -181,7 +181,7 @@ function place()
    <style>
        body
               {
-                         background-image:url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdoac001pJ_uAlodwhRxs8WbXkPbT_vYvA4tcx5ELQwvQX5tCcVw");
+                         background-image:url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5NvPWi4I00B8Phgfqll9xKyR1PmKyxxgeIsa7wLxj3Xsg8msSsg");
                                 }
                                        </style>
    </head>
