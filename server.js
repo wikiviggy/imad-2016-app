@@ -161,6 +161,37 @@ function check(form)/*function to check userid & password*/
                  return page;
 }
 
+
+function map()
+
+{
+var detail=`<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Google Map</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(13.08784,80.27847),
+            zoom: 5
+              };
+              var map = new google.maps.Map(mapCanvas, mapOptions);
+              }
+              </script>
+
+              <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+              </body>
+              </html> `
+              ;
+              return detail;
+              }
+
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     //make a select request
@@ -182,6 +213,9 @@ var counter=0;
 app.get('/counter',function (req,res){
  counter=counter+1;
  res.send(counter.toString());
+});
+app.get('/google-map',function (req,res) {
+ res.send(map());   
 });
 app.get('/my-login',function (req,res){
   res.send(login());
