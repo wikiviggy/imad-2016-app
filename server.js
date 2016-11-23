@@ -165,7 +165,7 @@ function check(form)/*function to check userid & password*/
 function map()
 
 {
-var detail=`<!DOCTYPE html>
+var data=`<!DOCTYPE html>
 <html>
 <body>
 
@@ -176,22 +176,21 @@ var detail=`<!DOCTYPE html>
 <script>
 function myMap() {
   var mapCanvas = document.getElementById("map");
-    var mapOptions = {
-        center: new google.maps.LatLng(13.08784,80.27847),
-            zoom: 5
-              };
-              var map = new google.maps.Map(mapCanvas, mapOptions);
-              }
-              </script>
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
 
-              <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
-              </body>
-              </html> `
-              ;
-              return detail;
-              }
-
+</body>
+</html> `
+;
+return data;
+}
 var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     //make a select request
@@ -214,7 +213,7 @@ app.get('/counter',function (req,res){
  counter=counter+1;
  res.send(counter.toString());
 });
-app.get('/google-map',function (req,res) {
+app.get('/google-map',function  (req,res) {
  res.send(map());   
 });
 app.get('/my-login',function (req,res){
