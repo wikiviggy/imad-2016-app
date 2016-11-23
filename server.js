@@ -176,8 +176,10 @@ app.get('/test-db',function(req,res){
 });
 function place()
 {
-    var location=`https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15543.436330762042!2d80.2042434!3d13.108112300000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1479885075683" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>`
-    ;
+   var location = `<html>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15543.436330762042!2d80.2042434!3d13.108112300000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1479885703537" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+   </html> `
+   ;
     return location;
 }
 app.get('/', function (req, res) {
