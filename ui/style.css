@@ -138,12 +138,12 @@ body {
 .audio {
      
     padding: 10px 15px;
-    background:#F4D03F ;
+    background:#8E44AD ;
     color: #FFF;    
     border-radius: 4px;
 }
 .audio:hover, .audio:focus {
-    background:#F9E79F ;
+    background:#D6EAF8 ;
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
