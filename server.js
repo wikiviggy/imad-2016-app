@@ -204,7 +204,9 @@ var see=`<html>
                                        </style>
 </head>
 <body>
+<marquee>
 <h3>Simple Calculator</h3>
+</marquee>
 <br/>
 <form Name="calc">
 <table border=2>
