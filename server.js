@@ -192,6 +192,26 @@ function place()
    ;
     return location;
 }
+function music()
+{
+    var beethoven = `<html>
+          <head>
+             <style>
+       body
+              {
+                         background-image:url("http://www.designingtips.com/wp-content/uploads/2012/07/cool-backgrounds-wallpapers-1.jpg");
+                                }
+            </style>
+          </head>
+          <body>
+          <audio controls>
+          <source src="http://www.amclassical.com/mp3/amclassical_beethoven_fur_elise.mp3"type="audio/mpeg">
+          </audio>    
+          </body>
+          </html>`
+          ;
+          return beethoven;
+}
 app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname,'ui','index.html'));
 });
@@ -205,6 +225,9 @@ app.get('/mymap', function  (req,res) {
 });
 app.get('/my-login',function (req,res){
   res.send(login());
+});
+app.get('/furelise',function (req,res){
+  res.send(music());  
 });
 app.get('/:articleName',function (req, res) {
    var articleName=req.params.articleName;
