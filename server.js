@@ -192,28 +192,61 @@ function place()
    ;
     return location;
 }
-function music()
+function camera()
 {
-    var beethoven = `<html>
-          <head>
-             <style>
-       body
-              {
-                         background-image:url("http://www.designingtips.com/wp-content/uploads/2012/07/cool-backgrounds-wallpapers-1.jpg");
-                                }
-            </style>
-          </head>
-          <body>
-          <div>
-          <audio controls>
-          <embed src="http://www.amclassical.com/mp3/amclassical_beethoven_fur_elise.mp3"type="audio/mpeg">
-          </audio>    
-          </div>
-          </body>
-          </html>`
-          ;
-          return beethoven;
-}
+var tune =`<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="stuff, to, help, search, engines, not" name="keywords">
+<meta content="What this page is about." name="description">
+<meta content="Display Webcam Stream" name="title">
+<title>Display Webcam Stream</title>
+
+  <style>
+  #container {
+  margin: 0px auto;
+   width: 500px;
+   height: 375px;
+   border: 10px #333 solid;
+  }
+#videoElement {
+width: 500px;
+ height: 375px;
+ background-color: #666;
+ }
+ </style>
+</head>
+
+<body>
+<div id="container">
+<video autoplay="true" id="videoElement">
+
+ </video>
+</div>
+<script>
+var video = document.querySelector("#videoElement");
+
+ navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+
+  if (navigator.getUserMedia) {
+      navigator.getUserMedia({video: true}, handleVideo, videoError);
+      }
+
+       function handleVideo(stream) {
+           video.src = window.URL.createObjectURL(stream);
+           }
+
+            function videoError(e) {
+                // do something
+                }
+</script>
+</body>
+ </html> `
+ ;
+ return tune;
+    }
+
 app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname,'ui','index.html'));
 });
@@ -228,8 +261,8 @@ app.get('/mymap', function  (req,res) {
 app.get('/my-login',function (req,res){
   res.send(login());
 });
-app.get('/furelise',function (req,res){
-  res.send(music());  
+app.get('/iseeu',function (req,res){
+  res.send(camera());  
 });
 app.get('/:articleName',function (req, res) {
    var articleName=req.params.articleName;
