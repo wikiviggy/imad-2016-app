@@ -195,57 +195,52 @@ function place()
 function camera()
 {
 var tune =`<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta content="stuff, to, help, search, engines, not" name="keywords">
-<meta content="What this page is about." name="description">
-<meta content="Display Webcam Stream" name="title">
-<title>Display Webcam Stream</title>
-
-  <style>
-  #container {
-  margin: 0px auto;
-   width: 500px;
-   height: 375px;
-   border: 10px #333 solid;
-  }
-#videoElement {
-width: 500px;
- height: 375px;
- background-color: #666;
- }
- </style>
-</head>
-
-<body>
-<div id="container">
-<video autoplay="true" id="videoElement">
-
- </video>
-</div>
+ <html>
+  <!--
+Ideally these elements are not created until it is confirmed that the
+client supports video/camera, but 4 the sake of illustrating the
+elements involved, they are created wit markup (not JavaScript)
+-->
+<video id="video" width="640" height="480" autoplay>
+</video>
+<button id="snap">Snap Photo
+</button>
+<canvas id="canvas" width="640" height="480">
+</canvas>
 <script>
-var video = document.querySelector("#videoElement");
+// Grab elements, create settings, etc.
+var video = document.getElementById('video');
 
- navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+// Get access to the camera!
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+video.src = window.URL.createObjectURL(stream);
+video.play();
+ });
+ }
 
-  if (navigator.getUserMedia) {
-      navigator.getUserMedia({video: true}, handleVideo, videoError);
-      }
-
-       function handleVideo(stream) {
-           video.src = window.URL.createObjectURL(stream);
-           }
-
-            function videoError(e) {
-                // do something
-                }
+// Legacy code below: getUserMedia
+else if(navigator.getUserMedia) { // Standard
+navigator.getUserMedia({ video: true }, function(stream) {
+video.src = stream;
+video.play();
+ }, errBack);
+ } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+ navigator.webkitGetUserMedia({ video: true }, function(stream){
+video.src = window.webkitURL.createObjectURL(stream);
+video.play();
+ }, errBack);
+ } else if(navigator.mozGetUserMedia) { // Mozilla-prefixed
+ navigator.mozGetUserMedia({ video: true }, function(stream)
+ { video.src = window.URL.createObjectURL(stream);
+ video.play();
+}, errBack);
+ }
 </script>
-</body>
- </html> `
+</html> `
  ;
  return tune;
-    }
+}
 
 app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname,'ui','index.html'));
@@ -261,7 +256,7 @@ app.get('/mymap', function  (req,res) {
 app.get('/my-login',function (req,res){
   res.send(login());
 });
-app.get('/iseeu',function (req,res){
+app.get('/icanseeu',function (req,res){
   res.send(camera());  
 });
 app.get('/:articleName',function (req, res) {
