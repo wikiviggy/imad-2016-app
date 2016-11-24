@@ -192,56 +192,6 @@ function place()
    ;
     return location;
 }
-function camera()
-{
-var tune =`<!DOCTYPE html>
- <html>
-  <!--
-Ideally these elements are not created until it is confirmed that the
-client supports video/camera, but 4 the sake of illustrating the
-elements involved, they are created wit markup (not JavaScript)
--->
-<video id="video" width="640" height="480" autoplay>
-</video>
-<button id="snap">Snap Photo
-</button>
-<canvas id="canvas" width="640" height="480">
-</canvas>
-<script>
-// Grab elements, create settings, etc.
-var video = document.getElementById('video');
-
-// Get access to the camera!
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-video.src = window.URL.createObjectURL(stream);
-video.play();
- });
- }
-
-// Legacy code below: getUserMedia
-else if(navigator.getUserMedia) { // Standard
-navigator.getUserMedia({ video: true }, function(stream) {
-video.src = stream;
-video.play();
- }, errBack);
- } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
- navigator.webkitGetUserMedia({ video: true }, function(stream){
-video.src = window.webkitURL.createObjectURL(stream);
-video.play();
- }, errBack);
- } else if(navigator.mozGetUserMedia) { // Mozilla-prefixed
- navigator.mozGetUserMedia({ video: true }, function(stream)
- { video.src = window.URL.createObjectURL(stream);
- video.play();
-}, errBack);
- }
-</script>
-</html> `
- ;
- return tune;
-}
-
 app.get('/', function (req, res) {
   res.sendfile(path.join(__dirname,'ui','index.html'));
 });
@@ -255,9 +205,6 @@ app.get('/mymap', function  (req,res) {
 });
 app.get('/my-login',function (req,res){
   res.send(login());
-});
-app.get('/iseeu',function (req,res){
-  res.send(camera());  
 });
 app.get('/:articleName',function (req, res) {
    var articleName=req.params.articleName;
