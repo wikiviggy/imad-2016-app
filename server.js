@@ -204,9 +204,11 @@ function music()
             </style>
           </head>
           <body>
+          <div>
           <audio controls>
           <source src="http://www.amclassical.com/mp3/amclassical_beethoven_fur_elise.mp3"type="audio/mpeg">
           </audio>    
+          </div>
           </body>
           </html>`
           ;
