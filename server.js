@@ -205,7 +205,7 @@ var see=`<html>
 </head>
 <body>
 <marquee>
-<h3>Simple Calculator</h3>
+<h3>Simple Calculator ! Who is quick ? You vs the calculator Game ON !</h3>
 </marquee>
 <br/>
 <form Name="calc">
