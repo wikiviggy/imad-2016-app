@@ -135,3 +135,15 @@ body {
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
+.maths{
+     
+    padding: 10px 15px;
+    background:#34495E ;
+    color: #FFF;    
+    border-radius: 4px;
+}
+.maths:hover, .maths:focus {
+    background:#A9CCE3;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
