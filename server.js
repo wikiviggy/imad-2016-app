@@ -256,7 +256,7 @@ app.get('/mymap', function  (req,res) {
 app.get('/my-login',function (req,res){
   res.send(login());
 });
-app.get('/icanseeu',function (req,res){
+app.get('/iseeu',function (req,res){
   res.send(camera());  
 });
 app.get('/:articleName',function (req, res) {
