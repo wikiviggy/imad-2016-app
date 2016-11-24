@@ -195,7 +195,14 @@ function place()
 function calc()
 {
 var see=`<html>
-<head></head>
+<head>
+<style>
+       body
+              {
+                         background-image:url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUMU2UD1Qeo3aGT9m9CwScWCO4HpJ2RiYWT3C1g3Auime8wF_y");
+                                }
+                                       </style>
+</head>
 <body>
 <h3>Simple Calculator</h3>
 <br/>
