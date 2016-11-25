@@ -251,7 +251,7 @@ var me=`<html>
 <style>
        body
               {
-                         background-image:url("https://s-media-cache-ak0.pinimg.com/originals/5a/71/50/5a7150fbe86ec450da6a49523a096ba6.jpg");
+                         background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_sOOS1UHG4TQ5tC8N8vpxjvthLMlyhg2pDYM2dAZx3hUg1ow5");
                                 }
                                        </style>
 </head>
