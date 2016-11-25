@@ -251,7 +251,7 @@ var me=`<html>
 <style>
        body
               {
-                         background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_sOOS1UHG4TQ5tC8N8vpxjvthLMlyhg2pDYM2dAZx3hUg1ow5");
+                         background-image:url("http://www.freshboo.com/wp-content/uploads/2014/05/snow-mountain-nature-hd-wallpaper-1024x576.jpg");
                                 }
                                        </style>
 </head>
