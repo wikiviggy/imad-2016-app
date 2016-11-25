@@ -247,6 +247,15 @@ return see;
 function stopwatch()
 {
 var me=`<html>
+<head>
+<style>
+       body
+              {
+                         background-image:url("https://s-media-cache-ak0.pinimg.com/originals/5a/71/50/5a7150fbe86ec450da6a49523a096ba6.jpg");
+                                }
+                                       </style>
+</head>
+<body>
 <h1><time>00:00:00</time></h1>
 <button class="spbut"id="start">start</button>
 <button class="spbut"id="stop">stop</button>
@@ -295,6 +304,7 @@ seconds = 0; minutes = 0; hours = 0;
   }
 
 </script>
+</body>
 </html> `
 ;
 return me;
