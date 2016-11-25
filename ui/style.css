@@ -150,12 +150,12 @@ body {
 .timer{
      
     padding: 10px 15px;
-    background:#34495E ;
+    background:#800000 ;
     color: #FFF;    
     border-radius: 4px;
 }
 .timer:hover, .timer:focus {
-    background:#A9CCE3;
+    background:#FF0000;
     border: solid 1px #2A4E77;
     text-decoration: none;
 }
