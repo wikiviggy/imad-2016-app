@@ -256,6 +256,9 @@ var me=`<html>
                                        </style>
 </head>
 <body>
+<marquee>
+<h3> THIS IS A STOPWATCH ! TRY IT <h3>
+</marquee>
 <h1><time>00:00:00</time></h1>
 <button class="spbut"id="start">start</button>
 <button class="spbut"id="stop">stop</button>
