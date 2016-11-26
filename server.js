@@ -7,13 +7,21 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 
-var config= {
+var config = {
+    user: 'coco98',
+    database: 'coco98',
+    host: 'db.imad.hasura-app.io',
+    port: '5432',
+    password: process.env.DB_PASSWORD
+};
+/*var config= {
     user:'wikiviggy',
     database:'wikiviggy',
     host:'db.imad.hasura-app.io',
     port:'5432',
     password:process.env.DB_PASSWORD
 };
+*/
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
