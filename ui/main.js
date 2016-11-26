@@ -14,7 +14,9 @@ function moveright()
 }
 img.onclick=function() {
     var interval=setInterval(moveright,50);
-};function loadLoginForm () {
+};
+
+function loadLoginForm () {
     var loginHtml = `
         <h3>Login/Register to unlock awesome features</h3>
         <input type="text" id="username" placeholder="username" />
